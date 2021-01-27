@@ -44,11 +44,12 @@ grep -i '^OSRIC$' input.txt -c
 grep -i '^HAMLET$' input.txt -c > HamletCount.txt
 grep -i '^OSRIC$' input.txt -c > OsricCount.txt
 ```
-### 4) Count the total number of times 'HAMLET' and 'OSRIC' spoke and store to a result file
+### 4) Count the total number of times 'HAMLET' and 'OSRIC' spoke and store it in a result file
 ```
 paste HamletCount.txt OsricCount.txt | awk '{ print $1 + $2 ;}' > result.txt
 ```
 
 ## Final Answer
 ``` cat result.txt ```
+
 The final answer is 384.
